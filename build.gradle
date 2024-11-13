@@ -10,7 +10,8 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
 }
-
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
@@ -31,4 +32,7 @@ dependencies {
     implementation 'org.springframework.kafka:spring-kafka:2.5.10.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE'
     implementation 'com.google.code.gson:gson:2.8.6'
+	
+    implementation 'org.apache.kafka:kafka-clients:2.5.0'
+    implementation 'org.apache.hadoop:hadoop-client:3.3.0' 
 }
