@@ -13,7 +13,7 @@ import java.util.concurrent.Executors;
 public class HdfsSinkApplication {
     private final static Logger logger = LoggerFactory.getLogger(HdfsSinkApplication.class);
 
-    private final static String BOOTSTRAP_SERVERS = "43.201.109.237:9092";
+    private final static String BOOTSTRAP_SERVERS = "43.201.7.122:9092";
     private final static String TOPIC_NAME = "select-color";
     private final static String GROUP_ID = "color-hdfs-save-consumer-group";
     private final static int CONSUMER_COUNT = 3;
